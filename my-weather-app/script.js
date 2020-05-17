@@ -44,10 +44,6 @@ function submitLocation(event) {
 let formSearch = document.querySelector("#formSearch");
 formSearch.addEventListener("submit", submitLocation);
 
-//considering that the user can also click on "search" in addition to press enter
-let searchButton = document.querySelector("#searchButton");
-searchButton.addEventListener("click", submitLocation);
-
 //1.2 Second function - getting the temperature of the city typed
 function showTemperature(response) {
   let currentTemperature = document.querySelector("#currentTemperature");
@@ -63,8 +59,6 @@ function changeTemperature() {
   axios.get(apiUrl).then(showTemperature);
 }
 formSearch.addEventListener("submit", changeTemperature);
-//considering that the user can also click on "search" in addition to press enter
-searchButton.addEventListener("click", changeTemperature);
 
 //2.1 and 2.2
 

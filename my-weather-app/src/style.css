@@ -1,0 +1,91 @@
+#searchLocation,
+#currentWeekDay,
+#currentTime,
+#currentTemperature,
+#celDegrees,
+.currentSummary,
+#currentLocation,
+.currentWeatherDetails,
+.tableText {
+  font-family: "Montserrat", sans-serif;
+  color: #283655;
+}
+
+#currentWeekDay,
+#currentTime,
+#currentLocationButton,
+#searchButton {
+  font-size: 16px;
+}
+
+#currentTemperature {
+  font-size: 100px;
+}
+
+.currentSummary {
+  padding-top: 20px;
+}
+
+.currentWeatherIcon {
+  width: 65px;
+}
+
+.currentWeatherDetails {
+  font-size: 10px;
+  padding-top: 13px;
+}
+
+.nextDaysWeatherIcons {
+  padding: 5px 0;
+}
+
+.tableText {
+  font-size: 12px;
+}
+
+#celDegrees {
+  font-size: 30px;
+  display: inline-block;
+}
+
+#currentWeekDay {
+  margin: 16px auto;
+}
+
+#currentLocationButton,
+#searchButton {
+  border-radius: 50px !important;
+}
+
+#searchButton {
+  background-color: #283655;
+  color: white;
+  border: none;
+  margin: 0 6px;
+}
+
+#searchButton:hover {
+  background: rgb(52, 74, 114);
+}
+
+#currentLocationButton {
+  border-color: #283655;
+  background-color: white;
+  color: #283655;
+}
+
+#currentLocationButton:hover {
+  background-color: #283655;
+  color: white;
+}
+
+.weather-app {
+  display: block;
+  margin: 20px auto;
+}
+
+#searchLocation {
+  background-color: rgb(233, 235, 240);
+  border: none;
+  border-radius: 10;
+}
