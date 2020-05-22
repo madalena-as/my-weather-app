@@ -37,12 +37,12 @@
                 <div class="card-group">
                     <div class="card  border-0 text-center">
                         <div class="card-body">
-                            <h5 class="currentSummary card-title">Mostly sunny</h5>
+                            <h5 class="currentSummary card-title"></h5>
                             <img class="currentWeatherIcon" src="/src/images/sun.png" width="65px">
                             <p class="currentWeatherDetails card-text">
-                                Precipation: 0% </br>
-                                Humidity: 72% </br>
-                                Wind: 10km/h</p>
+                                <div>Humidity: <span id="humidity"></span>% </div></br>
+                                <div>Wind: <span id="wind"></span>% </div>
+                            </p>
                         </div>
                     </div>
                     <div class="card  border-0">
@@ -51,7 +51,7 @@
                                 <span id="currentTemperature"></span>
                                 <span id=celDegrees>C°</span>
                             </h1>
-                            <h5 class="card-text" id="currentLocation">Munich</h5>
+                            <h5 class="card-text" id="currentLocation"></h5>
                         </div>
                     </div>
                 </div>
