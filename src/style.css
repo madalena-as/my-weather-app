@@ -89,3 +89,7 @@
   border: none;
   border-radius: 10;
 }
+
+#repositoryLink {
+  text-align: left;
+}
