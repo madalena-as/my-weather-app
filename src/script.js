@@ -36,6 +36,8 @@ function showWeatherConditions(response) {
   document.querySelector(".currentSummary").innerHTML = response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed)
+  document.querySelector("#currentWeatherIcon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  document.querySelector("#currentWeatherIcon").setAttribute("alt", response.data.weather[0].description);
 }
 
 function submitLocation(event) {
