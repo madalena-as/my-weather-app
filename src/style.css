@@ -2,7 +2,7 @@
 #currentWeekDay,
 #currentTime,
 #currentTemperature,
-#celDegrees,
+#units,
 .currentSummary,
 #currentLocation,
 .currentWeatherDetails,
@@ -43,13 +43,15 @@
   font-size: 12px;
 }
 
-#celDegrees {
-  font-size: 30px;
-  display: inline-block;
+#units {
+  position: relative;
+  top: -60px;
 }
 
-#currentWeekDay {
-  margin: 16px auto;
+div#currentWeekDay,
+div#currentTime {
+  position: relative;
+  left: 6px;
 }
 
 #currentLocationButton,
@@ -79,11 +81,6 @@
   color: white;
 }
 
-.weather-app {
-  display: block;
-  margin: 20px auto;
-}
-
 #searchLocation {
   background-color: rgb(233, 235, 240);
   border: none;
@@ -91,5 +88,32 @@
 }
 
 #repositoryLink {
-  text-align: left;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.weather-app {
+  border: 1px solid #DFE1E5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.row {
+  padding: 10px 20px;
+}
+
+.card-body {
+  padding: 0px;
+}
+
+#forecast-table {
+  border-top: 1px solid black;
+  margin: 0px 30px;
+  padding: 5px 0px 0px 0px;
+  text-align: center;
 }

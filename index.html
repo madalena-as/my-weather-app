@@ -15,79 +15,76 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="weather-app-wrapper">
         <div class="weather-app">
-            <div class="card" style="max-width: 50rem">
-                <form id="formSearch">
-                    <div class="row mx-2 mt-5">
-                        <input type="search" class="form-control ds-input col-6" id="searchLocation"
-                            placeholder="Type a city" />
+            <form id="formSearch">
+                <div class="row">
+                    <input type="search" class="form-control ds-input col-6" id="searchLocation"
+                        placeholder="Type a city" />
 
-                        <button type="button" id="searchButton" class="btn col">
-                            Search
-                        </button>
+                    <button type="button" id="searchButton" class="btn col">
+                        Search
+                    </button>
 
-                        <button type="button" id="currentLocationButton" class="btn col">
-                            Current
-                        </button>
-                    </div>
-                </form>
-                <p id="currentWeekDay" class="ml-4"></p>
-                <div id="currentTime" class="ml-4"></div>
-                <div class="card-group">
-                    <div class="card  border-0 text-center">
-                        <div class="card-body">
-                            <h5 class="currentSummary card-title"></h5>
-                            <img class="currentWeatherIcon" src="/src/images/sun.png" width="65px">
-                            <p class="currentWeatherDetails card-text">
-                                <div>Humidity: <span id="humidity"></span>% </div></br>
-                                <div>Wind: <span id="wind"></span>% </div>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card  border-0">
-                        <div class="card-body">
-                            <h1>
-                                <span id="currentTemperature"></span>
-                                <span id=celDegrees>C°</span>
-                            </h1>
-                            <h5 class="card-text" id="currentLocation"></h5>
-                        </div>
+                    <button type="button" id="currentLocationButton" class="btn col">
+                        Current
+                    </button>
+                </div>
+            </form>
+            <div id="currentWeekDay"></div>
+            <div id="currentTime"></div>
+            <div class="card-group">
+                <div class="card  border-0 text-center">
+                    <div class="card-body">
+                        <h5 class="currentSummary card-title"></h5>
+                        <img class="currentWeatherIcon" src="/src/images/sun.png" width="65px">
+                        <p class="currentWeatherDetails card-text">
+                            <div>Humidity: <span id="humidity"></span>% </div>
+                            <div>Wind: <span id="wind"></span>% </div>
+                        </p>
                     </div>
                 </div>
-                </br>
-                <div class="row border-top border-dark ml-3 mr-3 mb-3">
-
-                    <div class="col-sm text-center mt-3">
-                        <span class="tableText">Tue</span></br>
-                        <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
-                        </br> <span class="tableText">14°/10°</span>
-                    </div>
-                    <div class="col-sm text-center mt-3">
-                        <span class="tableText">Wed</span></br>
-                        <img class="nextDaysWeatherIcons" src="/src/images/rain.png">
-                        </br> <span class="tableText">12°/10°</span>
-                    </div>
-                    <div class="col-sm text-center mt-3">
-                        <span class="tableText">Thu</span></br>
-                        <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
-                        </br> <span class="tableText">13°/11°</span>
-                    </div>
-                    <div class="col-sm text-center mt-3">
-                        <span class="tableText">Fri</span></br>
-                        <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
-                        </br> <span class="tableText">14°/10°</span>
-                    </div>
-                    <div class="col-sm text-center mt-3">
-                        <span class="tableText">Sat</span></br>
-                        <img class="nextDaysWeatherIcons" src="/src/images/rain.png">
-                        </br> <span class="tableText">12°/8°</span>
+                <div class="card  border-0">
+                    <div class="card-body">
+                        <span id="currentTemperature"></span><span id=units>°C | <a href="#">°F</a></span>
+                        <h5 class="card-text" id="currentLocation"></h5>
                     </div>
                 </div>
             </div>
             </br>
-            <a id="repositoryLink" href="https://github.com/madalena-as/my-weather-app">GitHub</a>
-            <script src="src/script.js"></script>
+            <div id="forecast-table" class="row">
+
+                <div class="col-sm">
+                    <span class="tableText">Tue</span></br>
+                    <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
+                    </br> <span class="tableText">14°/10°</span>
+                </div>
+                <div class="col-sm">
+                    <span class="tableText">Wed</span></br>
+                    <img class="nextDaysWeatherIcons" src="/src/images/rain.png">
+                    </br> <span class="tableText">12°/10°</span>
+                </div>
+                <div class="col-sm">
+                    <span class="tableText">Thu</span></br>
+                    <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
+                    </br> <span class="tableText">13°/11°</span>
+                </div>
+                <div class="col-sm">
+                    <span class="tableText">Fri</span></br>
+                    <img class="nextDaysWeatherIcons" src="/src/images/cloudy.png">
+                    </br> <span class="tableText">14°/10°</span>
+                </div>
+                <div class="col-sm">
+                    <span class="tableText">Sat</span></br>
+                    <img class="nextDaysWeatherIcons" src="/src/images/rain.png">
+                    </br> <span class="tableText">12°/8°</span>
+                </div>
+            </div>
+        </div>
+        <div id="repositoryLink"><a href="https://github.com/madalena-as/my-weather-app">Open-source code</a> by
+            Madalena Amaral Santos</div>
+        <script src="src/script.js"></script>
+    </div>
 </body>
 
 </html>
