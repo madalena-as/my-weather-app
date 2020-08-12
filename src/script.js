@@ -40,7 +40,8 @@ function showWeatherConditions(response) {
   document.querySelector("#currentWeatherIcon").setAttribute("alt", response.data.weather[0].description);
 }
 
-function submitLocation(event) {
+function submitLocation(location) {
+  location.preventDefault(); // prevents the page to reload 
   let searchLocation = document.querySelector("#searchLocation");
   let city = searchLocation.value;
   let apiKey = "438a48e6e3520c991ec767d5c91e5269";
